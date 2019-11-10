@@ -1,0 +1,3 @@
+Decompiled binary with ghidra, saw it was setting gid and uid with sticky bit set
+It was calling `system("/usr/bin/env echo Exploit me");`
+Made a symlink from /tmp/echo to /bin/getflag and updated PATH accordingly to make flag03 call getflag for me :)

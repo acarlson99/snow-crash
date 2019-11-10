@@ -1,0 +1,4 @@
+Decompile level09
+Looks like it is incrementing each char by its index
+token file contents may have been run through this as well
+test.c un-rotates text

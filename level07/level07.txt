@@ -1,0 +1,7 @@
+Decompile level07
+`    uVar1 = sym.imp.getenv("LOGNAME");
+    sym.imp.asprintf(&uStack28, "/bin/echo %s ", uVar1);
+`
+Boy this looks insecure
+"export LOGNAME='`getflag`'"
+Evaluates `getflag` as user flag07

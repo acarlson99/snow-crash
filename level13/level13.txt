@@ -1,0 +1,3 @@
+Decompile binary
+Run it without the uid check
+Runs `ft_des("boe]!ai0FB@.:|L6l@A?>qJ}I");`

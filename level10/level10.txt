@@ -1,0 +1,5 @@
+This is a TOCTOU, or Time of Check to Time of Use, exploit
+The executable is checking if it has permission to read from the file,
+doing a whole bunch of other stuff like accepting a connection,
+and THEN reading from the file
+This allows us to swap the allowed file for the disallowed token file

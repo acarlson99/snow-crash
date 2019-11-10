@@ -1,0 +1,4 @@
+`less /etc/passwd`
+`flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash`
+Boy that hash of flag01's password looks weird doesn't it
+John the Ripper `42hDRfypTqqnw` to crack

@@ -1,0 +1,5 @@
+`find / -name flag00 2>/dev/null`
+returns `/usr/sbin/john
+/rofs/usr/sbin/john`
+File contains hashed password `cdiiddwpgswtgt`
+Try un-hashing it.  Rot11 seems to work

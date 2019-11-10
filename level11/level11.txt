@@ -1,0 +1,9 @@
+less shows us that this process is running:
+`flag11    1841  0.0  0.1   2892   828 ?        S    05:54   0:00 lua /home/user/level11/level11.lua`
+lua file checks against hash 'f05d1d066fb246efe0c6f7d095f909a7a0cf34a0'
+A simple google search yields 'NotSoEasy'
+In order to correctly pass the value to the sha1sum command run by the server give it '-n NotSoEasy'
+Returns 'Password: Gz you dumb*'
+
+Well I'm dumb.  It's concatenating 'echo' with some string I give it so if I give it getflag it runs it.  Shrug
+Setting password to '`getflag` > /tmp/FLAG; ls' does the trick

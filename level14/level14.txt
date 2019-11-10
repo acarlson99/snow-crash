@@ -1,0 +1,3 @@
+Same as level13
+`strings getflag` produces some wacky output, eh?
+Decompile ft_des, run it on encrypted strings in getflag

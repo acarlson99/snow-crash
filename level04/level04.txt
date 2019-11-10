@@ -1,0 +1,3 @@
+There's a server running this perl script I guess
+`param("x")` can be exploited by giving it a shell command to run
+`http://localhost:4747/?x=$(getflag)` setting x to getflag runs getflag and prints the output

